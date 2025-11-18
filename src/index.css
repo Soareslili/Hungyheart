@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+@import 'tailwindcss';
+
+
+@theme {
+
+  
+  --color-background: #171311;
+  --color-foreground: #F4EDE2;
+
+  --color-card: #211A18;
+  --color-card-foreground: #F4EDE2;
+
+  --color-popover: #1C1715;
+  --color-popover-foreground: #F4EDE2;
+
+  --color-primary: #231C19;
+  --color-primary-foreground: #F4EDE2;
+
+  --color-secondary: #D8A974;
+  --color-secondary-foreground: #F9F3EB;
+
+  --color-muted: #2D2725;
+  --color-muted-foreground: #C2B7A9;
+
+  --color-accent: #E1B679;
+  --color-accent-foreground: #F9F3EB;
+
+  --color-destructive: #DE3838;
+  --color-destructive-foreground: #F9F3EB;
+
+  --color-border: #322C29;
+  --color-input: #26211F;
+  --color-ring: #D7AB6D;
+
+  --color-radius: 0.5rem;
+
+  /* Custom restaurant theme tokens */
+  --color-coffee: #231C19;
+  --color-copper: #E1B679;
+  --color-gold: #F2C86B;
+  --color-cream: #F6ECDC;
+  --color-deep-black: #0D0D0D;
+
+  /* Sidebar */
+  --color-sidebar-background: #FAFAFA;
+  --color-sidebar-foreground: #3E4046;
+  --color-sidebar-primary: #17181A;
+  --color-sidebar-primary-foreground: #FAFAFA;
+  --color-sidebar-accent: #F4F5F7;
+  --color-sidebar-accent-foreground: #17181A;
+  --color-sidebar-border: #E5E8EC;
+  --color-sidebar-ring: #3A8BFF;
+}
+
+.dark {
+  --color-background: #171311;
+  --color-foreground: #F4EDE2;
+}
+
+.font-script {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
