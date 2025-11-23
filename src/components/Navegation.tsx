@@ -9,7 +9,6 @@ const Navigation = () => {
     { name: "Home", href: "#home", icon: Home },
     { name: "About", href: "#about", icon: Info },
     { name: "Menu", href: "#menu", icon: UtensilsCrossed },
-    { name: "Team", href: "#team", icon: Users },
     { name: "Gallery", href: "#gallery", icon: ImageIcon },
     { name: "Shop", href: "#shop", icon: ShoppingBag },
     { name: "Blog", href: "#blog", icon: BookOpen },
