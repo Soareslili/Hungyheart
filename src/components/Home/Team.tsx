@@ -1,4 +1,4 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../../components/ui/card";
 import { ChefHat, UtensilsCrossed, Cookie, Coffee } from "lucide-react";
 
 const Team = () => {

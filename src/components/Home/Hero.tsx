@@ -1,9 +1,11 @@
 import { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import heroImage1 from "../assets/hero-restaurant.png";
-import heroImage2 from "../assets/hero-restaurant-2.png";
-import heroImage3 from "../assets/hero-restaurant-3.png";
+import heroImage1 from "../../assets/herorestaurant.png";
+import heroImage2 from "../../assets/herorestaurant-2.png";
+import heroImage3 from "../../assets/herorestaurant-3.png";
+
+
 
 const Hero = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -11,20 +13,20 @@ const Hero = () => {
   ]);
 
   const slides = [
-    { 
-      image: heroImage1, 
+    {
+      image: heroImage1,
       alt: "Elegant restaurant interior with natural lighting",
       title: "Exótico e Delicioso",
       subtitle: "Onde a arte culinária encontra momentos inesquecíveis"
     },
-    { 
-      image: heroImage2, 
+    {
+      image: heroImage2,
       alt: "Upscale dining area with evening city views",
       title: "Uma Viagem de Sabores",
       subtitle: "Experimente os melhores ingredientes elaborados com paixão"
     },
-    { 
-      image: heroImage3, 
+    {
+      image: heroImage3,
       alt: "Luxurious restaurant with warm ambient lighting",
       title: "Elegância em cada mordida",
       subtitle: "Delicie-se com uma experiência gastronômica sofisticada"
@@ -36,7 +38,7 @@ const Hero = () => {
 
     const updateSlideIndicator = () => {
       const current = emblaApi.selectedScrollSnap();
-      
+
       // Update indicators
       document.querySelectorAll('[data-slide-indicator]').forEach((indicator, index) => {
         if (index === current) {
@@ -51,7 +53,7 @@ const Hero = () => {
       // Update text content
       const titleElement = document.querySelector('[data-slide-title]');
       const subtitleElement = document.querySelector('[data-slide-subtitle]');
-      
+
       if (titleElement && subtitleElement) {
         titleElement.textContent = slides[current].title;
         subtitleElement.textContent = slides[current].subtitle;
@@ -118,7 +120,11 @@ const Hero = () => {
           </button>
         ))}
       </div>
+  
     </section>
+    
+  
+
   );
 };
 
