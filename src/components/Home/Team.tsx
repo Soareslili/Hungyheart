@@ -30,27 +30,29 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-20 bg-popover">
+    <section id="team" className="py-24 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12 max-w-3xl mx-auto">
-          <h2 className="text-5xl font-playfair font-bold text-foreground mb-4">
-          Conheça Nossa Equipe
+        <div className="text-center mb-16 max-w-3xl mx-auto">
+          <h2 className="text-5xl font-playfair font-bold text-foreground">
+            Conheça Nossa Equipe
           </h2>
-          <p className="text-secondary font-script text-2xl mb-4">
+          <p className="text-secondary font-script text-2xl mt-2">
             Passionate culinary artists
           </p>
-          <p className="text-foreground/80 font-poppins">
-           Artistas culinários apaixonados
+          <p className="text-foreground/80 font-poppins mt-3">
+            Os criadores por trás da excelência gastronômica
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {teamMembers.map((member, index) => {
             const Icon = member.icon;
+
             return (
-              <Card 
-                key={index} 
-                className="bg-card border-border hover:border-secondary transition-all duration-300 hover:shadow-xl group"
+              <Card
+                key={index}
+                className="bg-card border border-border hover:border-secondary transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,200,100,0.15)] group animate-fade-in"
+                style={{ animationDelay: `${index * 150}ms` }}
               >
                 <CardHeader className="text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
@@ -63,6 +65,7 @@ const Team = () => {
                     {member.role}
                   </CardDescription>
                 </CardHeader>
+
                 <CardContent>
                   <p className="text-center text-muted-foreground font-poppins text-sm">
                     {member.description}
@@ -74,6 +77,7 @@ const Team = () => {
         </div>
       </div>
     </section>
+
   );
 };
 
