@@ -71,8 +71,8 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden pt-20">
-      {/* ========= CAROUSEL ========= */}
+    <section id="home" className="relative h-screen w-full overflow-hidden pt-16">
+     
       <div className="absolute inset-0" ref={emblaRef}>
         <div className="flex h-full">
           {slides.map((slide, index) => (
@@ -83,17 +83,17 @@ const Hero = () => {
                 className="w-full h-full object-cover"
               />
 
-              {/* GRADIENT OVERLAY */}
+             
               <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background"></div>
 
-              {/* TEXTURE OVERLAY (gold grain elegância) */}
+           
               <div className="absolute inset-0 pointer-events-none bg-[url('/grain.png')] opacity-[0.12] mix-blend-overlay"></div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* ========= HERO CONTENT ========= */}
+    
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
         <h1
           data-slide-title
@@ -109,7 +109,7 @@ const Hero = () => {
           Onde a arte culinária encontra momentos inesquecíveis
         </p>
 
-        {/* ======= CTA BUTTONS ======= */}
+       
         <div className="flex flex-col md:flex-row items-center gap-4 mt-6">
           <Link to="/reserve">
             <button className="bg-secondary hover:bg-secondary/90 cursor-pointer text-secondary-foreground px-10 py-4 text-lg font-poppins rounded-lg shadow-lg transition-all duration-300 hover:scale-[1.03]">
@@ -125,19 +125,8 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* ========= SLIDE INDICATORS ========= */}
-      <div className="absolute bottom-8 left-8 z-20 flex flex-col space-y-4">
-        {[0, 1, 2].map((index) => (
-          <button
-            key={index}
-            data-slide-indicator
-            onClick={() => scrollTo(index)}
-            className="font-poppins text-sm transition-all duration-300 text-muted-foreground"
-          >
-            {String(index + 1).padStart(2, "0")}
-          </button>
-        ))}
-      </div>
+    
+     
 
     
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce text-secondary">
