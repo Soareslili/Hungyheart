@@ -68,6 +68,7 @@ const Hero = () => {
 
   const scrollTo = (index: number) => {
     if (emblaApi) emblaApi.scrollTo(index);
+    
   };
 
   return (

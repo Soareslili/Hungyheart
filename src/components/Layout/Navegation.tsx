@@ -18,7 +18,6 @@ import logo from "../../assets/logo.png";
 const navLinks = [
   { name: "Home", href: "/", icon: Home },
   { name: "About", href: "/about", icon: Info },
-  { name: "Menu", href: "/menu", icon: UtensilsCrossed },
   { name: "Gallery", href: "/gallery", icon: ImageIcon },
   { name: "Shop", href: "/shop", icon: ShoppingBag },
   { name: "Blog", href: "/blog", icon: BookOpen },

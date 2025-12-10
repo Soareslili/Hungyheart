@@ -24,9 +24,9 @@ const About = () => {
                 e experiências pessoais para criar seus próprios pratos exclusivos. Eles prestam atenção 
                 em cada detalhe, desde a seleção dos ingredientes até a disposição no prato.
               </p>
-              <Link to="/reserve">
+              <Link to="/menu">
                 <Button className="bg-secondary cursor-pointer hover:bg-secondary/90 text-secondary-foreground px-8 font-poppins font-medium">
-                  Reserve Sua Mesa
+               Conheça nosso Menu
                 </Button>
               </Link>
             </div>
