@@ -4,31 +4,31 @@ import Shop from "./Shop";
 
 const Menu = () => {
   const starters = [
-    { name: "Caesar Salad", description: "Fresh romaine lettuce with parmesan and croutons", price: "$12" },
-    { name: "French Onion Soup", description: "Caramelized onions with melted gruyère", price: "$10" },
-    { name: "Bruschetta", description: "Grilled bread with tomatoes, garlic, and basil", price: "$9" },
-    { name: "Shrimp Cocktail", description: "Fresh shrimp with tangy cocktail sauce", price: "$15" },
+    { name: "Salada César", description: "Alface romana fresca com parmesão e croutons", price: "$12" },
+    { name: "Sopa de Cebola", description: "Cebolas caramelizadas com queijo gruyère gratinado", price: "$10" },
+    { name: "Bruschetta", description: "Pão grelhado com tomate, alho e manjericão", price: "$9" },
+    { name: "Coquetel de Camarão", description: "Camarões frescos com molho coquetel", price: "$15" },
   ];
 
   const mains = [
-    { name: "Grilled Salmon", description: "Fresh Atlantic salmon with herbs and lemon butter", price: "$28" },
-    { name: "Ribeye Steak", description: "Premium aged beef with garlic butter", price: "$35" },
-    { name: "Mushroom Risotto", description: "Creamy arborio rice with wild mushrooms", price: "$22" },
-    { name: "Chicken Parmesan", description: "Breaded chicken with marinara and mozzarella", price: "$24" },
+    { name: "Salmão Grelhado", description: "Salmão do Atlântico grelhado com ervas e manteiga de limão", price: "$28" },
+    { name: "Bife Ribeye", description: "Bife maturado com manteiga de alho", price: "$35" },
+    { name: "Risoto de Cogumelos", description: "Risoto cremoso de arroz arborio com cogumelos silvestres", price: "$22" },
+    { name: "Frango à Parmegiana", description: "Frango empanado com molho marinara e mussarela", price: "$24" },
   ];
 
   const desserts = [
-    { name: "Tiramisu", description: "Classic Italian dessert with coffee and mascarpone", price: "$8" },
-    { name: "Chocolate Lava Cake", description: "Warm chocolate cake with molten center", price: "$9" },
-    { name: "Crème Brûlée", description: "Vanilla custard with caramelized sugar", price: "$8" },
-    { name: "Cheesecake", description: "New York style with berry compote", price: "$8" },
+    { name: "Tiramisu", description: "Clássica sobremesa italiana com café e mascarpone", price: "$8" },
+    { name: "Bolo de Chocolate (Lava)", description: "Bolo de chocolate quente com centro cremoso", price: "$9" },
+    { name: "Crème Brûlée", description: "Creme de baunilha com cobertura de açúcar caramelizado", price: "$8" },
+    { name: "Cheesecake", description: "Estilo Nova Iorque com compota de frutas vermelhas", price: "$8" },
   ];
 
   const drinks = [
-    { name: "Espresso", description: "Rich Italian coffee", price: "$4" },
-    { name: "Cappuccino", description: "Espresso with steamed milk foam", price: "$5" },
-    { name: "Red Wine", description: "Selection of premium wines", price: "$8-15" },
-    { name: "Cocktails", description: "House special cocktails", price: "$12" },
+    { name: "Espresso", description: "Café expresso italiano", price: "$4" },
+    { name: "Cappuccino", description: "Expresso com leite vaporizado e espuma", price: "$5" },
+    { name: "Vinho Tinto", description: "Seleção de vinhos premium", price: "$8-15" },
+    { name: "Coquetéis", description: "Coquetéis especiais da casa", price: "$12" },
   ];
 
   const MenuSection = ({ items }: { items: typeof starters }) => (
@@ -59,22 +59,22 @@ const Menu = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-5xl font-playfair font-bold text-foreground mb-4">
-            Our Menu
+            Nosso Cardápio
           </h2>
           <p className="text-secondary font-script text-2xl mb-4">
-            Delicious dishes crafted with passion
+            Pratos deliciosos feitos com paixão
           </p>
           <p className="text-foreground/80 font-poppins">
-            Experience our carefully curated selection of dishes prepared by our master chefs
+            Experimente nossa seleção cuidadosamente elaborada de pratos preparados pelos nossos chefs
           </p>
         </div>
 
         <Tabs defaultValue="starters" className="max-w-6xl mx-auto">
           <TabsList className="grid w-full grid-cols-4 mb-8 bg-muted">
-            <TabsTrigger value="starters" className="font-poppins">Starters</TabsTrigger>
-            <TabsTrigger value="mains" className="font-poppins">Main Courses</TabsTrigger>
-            <TabsTrigger value="desserts" className="font-poppins">Desserts</TabsTrigger>
-            <TabsTrigger value="drinks" className="font-poppins">Drinks</TabsTrigger>
+            <TabsTrigger value="starters" className="font-poppins">Entradas</TabsTrigger>
+            <TabsTrigger value="mains" className="font-poppins">Pratos Principais</TabsTrigger>
+            <TabsTrigger value="desserts" className="font-poppins">Sobremesas</TabsTrigger>
+            <TabsTrigger value="drinks" className="font-poppins">Bebidas</TabsTrigger>
           </TabsList>
           <TabsContent value="starters">
             <MenuSection items={starters} />

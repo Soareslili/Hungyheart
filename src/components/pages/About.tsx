@@ -6,18 +6,17 @@ const About = () => {
   return (
     <>
 
-      {/* ========= 1) SOBRE NÓS ========= */}
+   
       <section id="about" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
 
-            {/* TEXT CONTENT */}
             <div className="space-y-6 order-2 lg:order-1">
               <h2 className="text-5xl font-playfair font-bold text-foreground">
-                Sobre Nós
+                Sobre Nós 
               </h2>
               <p className="text-secondary font-script text-2xl">
-                Hungyheart cozinha comida como arte culinária
+                Hungyheart cozinha comida como arte culinárias
               </p>
               <p className="text-foreground/80 font-poppins leading-relaxed">
                 Os artistas culinários muitas vezes se inspiram em várias cozinhas, tradições culturais 
@@ -31,7 +30,7 @@ const About = () => {
               </Link>
             </div>
 
-            {/* IMAGE & DECORATIONS */}
+         
             <div className="relative order-1 lg:order-2">
               <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <img

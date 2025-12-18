@@ -3,48 +3,55 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { ShoppingCart } from "lucide-react";
 import { toast } from "sonner";
 
+import Coffe from '../../assets/Coffe.png'
+import OliveOil from '../../assets/OliveOil.png'
+import Spice from '../../assets/Spice.png'
+import Chef from '../../assets/Chef.png'
+import Cookware from '../../assets/Cookware.png'
+import Recipe from '../../assets/Recipe.png'
+
 const Shop = () => {
     const products = [
         {
-            name: "Coffee Beans",
-            description: "Premium roasted coffee beans from Brazil",
+            name: "Grãos de Café",
+            description: "Grãos de café torrados premium do Brasil",
             price: "$18.99",
-            image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80",
+            image: Coffe,
         },
         {
-            name: "Olive Oil",
-            description: "Extra virgin olive oil from Italy",
+            name: "Azeite Extra Virgem",
+            description: "Azeite extra virgem da Itália",
             price: "$24.99",
-            image: "https://images.unsplash.com/photo-1604908811920-3c981b0c8a43?auto=format&fit=crop&w=800&q=80",
+            image: OliveOil,
         },
         {
-            name: "Spice Collection",
-            description: "Gourmet spice set for cooking",
+            name: "Conjunto de Temperos",
+            description: "Seleção gourmet de temperos para cozinhar",
             price: "$32.99",
-            image: "https://images.unsplash.com/photo-1587049352851-fcde36d188cd?auto=format&fit=crop&w=800&q=80",
+            image: Spice,
         },
         {
-            name: "Chef's Knife",
-            description: "Professional kitchen knife set",
+            name: "Faca de Chef",
+            description: "Faca profissional para cozinha",
             price: "$89.99",
-            image: "https://images.unsplash.com/photo-1585238342028-9801dc543a03?auto=format&fit=crop&w=800&q=80",
+            image: Chef,
         },
         {
-            name: "Cookware Set",
-            description: "Premium non-stick cooking pans",
+            name: "Conjunto de Panelas",
+            description: "Conjunto premium de panelas antiaderentes",
             price: "$149.99",
-            image: "https://images.unsplash.com/photo-1585238342014-fd43a69ca56d?auto=format&fit=crop&w=800&q=80",
+            image: Cookware,
         },
         {
-            name: "Recipe Book",
-            description: "Our signature recipes collection",
+            name: "Livro de Receitas",
+            description: "Nossa coleção de receitas exclusivas",
             price: "$29.99",
-            image: "https://images.unsplash.com/photo-1484980972926-edee96e0960d?auto=format&fit=crop&w=800&q=80",
+            image: Recipe,
         },
     ];
 
     const handleAddToCart = (productName: string) => {
-        toast.success(`${productName} added to cart!`);
+        toast.success(`${productName} adicionado ao carrinho!`);
     };
 
     return (
@@ -52,13 +59,13 @@ const Shop = () => {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12 max-w-3xl mx-auto">
                     <h2 className="text-5xl font-playfair font-bold text-foreground mb-4">
-                        Shop
+                        Loja
                     </h2>
                     <p className="text-secondary font-script text-2xl mb-4">
-                        Bring the taste home
+                        Leve o sabor para casa
                     </p>
                     <p className="text-foreground/80 font-poppins">
-                        Discover our curated collection of premium ingredients and kitchen essentials
+                        Descubra nossa coleção selecionada de ingredientes premium e itens essenciais de cozinha
                     </p>
                 </div>
 
@@ -89,7 +96,7 @@ const Shop = () => {
                                     className="font-poppins"
                                 >
                                     <ShoppingCart className="w-4 h-4 mr-2" />
-                                    Add to Cart
+                                    Adicionar ao Carrinho
                                 </Button>
                             </CardFooter>
                         </Card>

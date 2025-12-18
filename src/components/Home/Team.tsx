@@ -53,6 +53,9 @@ const Team = () => {
                 key={index}
                 className="bg-card border border-border hover:border-secondary transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,200,100,0.15)] group animate-fade-in"
                 style={{ animationDelay: `${index * 150}ms` }}
+
+                data-aos="fade-down"
+                data-aos-delay={index * 300}
               >
                 <CardHeader className="text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">

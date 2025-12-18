@@ -7,6 +7,7 @@ import Footer from "./components/Layout/Footer";
 import  Home  from "./components/Home/Home";
 import Menu from "./components/Services/Menu";
 import Gallery from "./components/pages/Gallery";
+import Contact from "./components/Layout/Contact";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/reserve" element={<ReservationForm />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 
