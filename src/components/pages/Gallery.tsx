@@ -25,13 +25,13 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 max-w-3xl mx-auto">''
           <h2 className="text-5xl font-playfair font-bold text-foreground mb-4">
-            Gallery
+           Galeria
           </h2>
           <p className="text-secondary font-script text-2xl mb-4">
-            A visual feast for your eyes
+           Um banquete visual para os seus olhos
           </p>
           <p className="text-foreground/80 font-poppins">
-            Explore our collection of beautifully crafted dishes and elegant atmosphere
+           Explore nossa coleção de pratos lindamente elaborados e atmosfera elegante
           </p>
         </div>
 
@@ -41,6 +41,10 @@ const Gallery = () => {
               key={index}
               className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group"
               onClick={() => setSelectedImage(index)}
+
+              data-aos="zoom-in"
+                data-aos-delay={index * 300}
+
             >
               <img
                 src={image.url}
@@ -49,7 +53,7 @@ const Gallery = () => {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <span className="text-white font-poppins text-sm">View Image</span>
+                <span className="text-white font-poppins text-sm">Veja Imagem</span>
               </div>
             </div>
           ))}

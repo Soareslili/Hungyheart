@@ -1,5 +1,6 @@
 import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
 import { Separator } from "../../components/ui/separator";
+import Logo from '../../assets/logo.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -15,11 +16,11 @@ const Footer = () => {
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-          {/* Brand Section */}
+       
           <div className="space-y-4">
-            <h3 className="text-3xl font-script text-secondary">Hungyheart</h3>
+            <img src={Logo} alt="Hungyheart Logo" className="w-32 h-auto" />
             <p className="text-muted-foreground font-poppins">
-              Where culinary artistry meets unforgettable moments. Experience the finest dining in an elegant atmosphere.
+             Onde a arte culinária encontra momentos inesquecíveis. Experimente os melhores restaurantes em um ambiente elegante.
             </p>
             <div className="flex gap-4 pt-2">
               <a
@@ -52,19 +53,15 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Quick Links */}
+        
           <div className="space-y-4">
-            <h4 className="text-xl font-semibold text-foreground">Quick Links</h4>
+            <h4 className="text-xl font-semibold text-foreground">Links rápidos</h4>
             <nav className="flex flex-col space-y-2">
               {[
-                { label: "Home", id: "hero" },
-                { label: "About Us", id: "about" },
-                { label: "Menu", id: "menu" },
-                { label: "Team", id: "team" },
-                { label: "Gallery", id: "gallery" },
-                { label: "Shop", id: "shop" },
-                { label: "Blog", id: "blog" },
-                { label: "Contact", id: "contact" },
+                { label: "Início", id: "hero" },
+                { label: "Sobre Nós", id: "about" },
+                { label: "Galeria", id: "gallery" },
+                { label: "Contato", id: "contact" },
               ].map((link) => (
                 <button
                   key={link.id}
@@ -77,13 +74,12 @@ const Footer = () => {
             </nav>
           </div>
 
-          {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="text-xl font-semibold text-foreground">Contact Us</h4>
+            <h4 className="text-xl font-semibold text-foreground">Contate-nos</h4>
             <div className="space-y-3 font-poppins">
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-5 h-5 text-secondary mt-0.5 flex-shrink-0" />
-                <span>123 Gourmet Street, Culinary District, CD 12345</span>
+                <span>Rua Gourmet 123, Distrito Culinário, CD 12345</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="w-5 h-5 text-secondary flex-shrink-0" />
@@ -100,20 +96,20 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Opening Hours */}
+      
           <div className="space-y-4">
-            <h4 className="text-xl font-semibold text-foreground">Opening Hours</h4>
+            <h4 className="text-xl font-semibold text-foreground">Horário de funcionamento</h4>
             <div className="space-y-2 font-poppins text-muted-foreground">
               <div className="flex justify-between">
-                <span>Monday - Friday</span>
+                <span>Segunda - Sexta</span>
                 <span className="text-foreground">11:00 - 23:00</span>
               </div>
               <div className="flex justify-between">
-                <span>Saturday</span>
+                <span>Sábado</span>
                 <span className="text-foreground">10:00 - 00:00</span>
               </div>
               <div className="flex justify-between">
-                <span>Sunday</span>
+                <span>Domingo</span>
                 <span className="text-foreground">10:00 - 22:00</span>
               </div>
             </div>
@@ -122,7 +118,7 @@ const Footer = () => {
 
         <Separator className="my-8" />
 
-        {/* Copyright */}
+    
         <div className="text-center text-muted-foreground font-poppins text-sm">
           <p>© {currentYear} Hungyheart Restaurant & Café. All rights reserved.</p>
         </div>

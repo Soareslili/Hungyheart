@@ -32,7 +32,7 @@ const Contact = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
-                    {/* Contact Form */}
+                  
                     <Card className="bg-card border-border">
                         <CardHeader>
                             <CardTitle className="text-3xl font-playfair text-foreground">
@@ -86,7 +86,7 @@ const Contact = () => {
                         </CardContent>
                     </Card>
 
-                    {/* Contact Information */}
+                
                     <div className="space-y-6">
                         <Card className="bg-card border-border">
                             <CardContent className="pt-6">
