@@ -93,7 +93,7 @@ const Shop = () => {
                                 <Button
                                     variant="secondary"
                                     onClick={() => handleAddToCart(product.name)}
-                                    className="font-poppins"
+                                    className="font-poppins cursor-pointer"
                                 >
                                     <ShoppingCart className="w-4 h-4 mr-2" />
                                     Adicionar ao Carrinho

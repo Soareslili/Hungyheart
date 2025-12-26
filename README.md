@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# 🍽️ HungryHeart — Restaurante de Luxo | Site Institucional & Cardápio Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **HungryHeart Restaurant** é um projeto de site institucional para um restaurante de alto padrão, com foco em **experiência visual sofisticada**, **navegação elegante** e **apresentação premium do cardápio e da marca**.
 
-Currently, two official plugins are available:
+O objetivo do projeto é simular a presença digital de um restaurante gourmet moderno, unindo design refinado, performance e usabilidade.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hero section imersiva com chamada para ação
+- Seção "Sobre Nós" com storytelling da marca
+- Linha do tempo com a história do restaurante
+- Cards de diferenciais gourmet
+- Apresentação da equipe de chefs
+- Cardápio interativo com categorias (entradas, pratos principais, sobremesas, bebidas)
+- Seção de loja (produtos premium)
+- Formulário de reserva de mesa
+- Layout totalmente responsivo
+- Design dark premium com detalhes dourados
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Stack Tecnológica
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React (SPA)
+- Vite (ambiente de desenvolvimento e build)
+- Tailwind CSS (estilização)
+- React Router DOM (gerenciamento de rotas)
+- Lucide Icons (ícones)
+- AOS (animações de scroll)
+- Deploy: Hostinger / Vercel
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Design & UX
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+O layout foi pensado para transmitir:
+- Sofisticação
+- Exclusividade
+- Conforto
+- Alta gastronomia
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+A paleta escura com tons quentes e dourados cria uma experiência elegante e imersiva, alinhada com o posicionamento premium da marca.
+
+---
+
+## 🚀 Como rodar o projeto localmente
+
+```bash
+git clone https://github.com/seu-usuario/hungryheart-restaurant.git
+cd hungryheart-restaurant
+npm install
+npm run dev

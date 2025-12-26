@@ -66,7 +66,7 @@ const Footer = () => {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-muted-foreground hover:text-secondary transition-colors duration-300 text-left font-poppins"
+                  className="text-muted-foreground hover:text-secondary cursor-pointer transition-colors duration-300 text-left font-poppins"
                 >
                   {link.label}
                 </button>
