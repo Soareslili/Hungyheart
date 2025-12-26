@@ -35,41 +35,39 @@ const Hero = () => {
     },
   ];
 
-  useEffect(() => {
-    if (!emblaApi) return;
+ useEffect(() => {
+  if (!emblaApi) return;
 
-    const updateSlideIndicator = () => {
-      const current = emblaApi.selectedScrollSnap();
+  const updateSlideIndicator = () => {
+    const current = emblaApi.selectedScrollSnap();
 
-      document.querySelectorAll("[data-slide-indicator]").forEach((indicator, index) => {
-        if (index === current) {
-          indicator.classList.add("text-secondary", "font-semibold", "text-lg");
-          indicator.classList.remove("text-muted-foreground");
-        } else {
-          indicator.classList.remove("text-secondary", "font-semibold", "text-lg");
-          indicator.classList.add("text-muted-foreground");
-        }
-      });
-
-      const title = document.querySelector("[data-slide-title]");
-      const subtitle = document.querySelector("[data-slide-subtitle]");
-
-      if (title && subtitle) {
-        title.textContent = slides[current].title;
-        subtitle.textContent = slides[current].subtitle;
+    document.querySelectorAll("[data-slide-indicator]").forEach((indicator, index) => {
+      if (index === current) {
+        indicator.classList.add("text-secondary", "font-semibold", "text-lg");
+        indicator.classList.remove("text-muted-foreground");
+      } else {
+        indicator.classList.remove("text-secondary", "font-semibold", "text-lg");
+        indicator.classList.add("text-muted-foreground");
       }
-    };
+    });
 
-    emblaApi.on("select", updateSlideIndicator);
-    updateSlideIndicator();
+    const title = document.querySelector("[data-slide-title]");
+    const subtitle = document.querySelector("[data-slide-subtitle]");
 
-    return () => emblaApi.off("select", updateSlideIndicator);
-  }, [emblaApi]);
-
-  const scrollTo = (index: number) => {
-    if (emblaApi) emblaApi.scrollTo(index);
-    
+    if (title && subtitle) {
+      title.textContent = slides[current].title;
+      subtitle.textContent = slides[current].subtitle;
+    }
   };
+
+  emblaApi.on("select", updateSlideIndicator);
+  updateSlideIndicator();
+
+  return () => {
+    emblaApi.off("select", updateSlideIndicator);
+  };
+}, [emblaApi]);
+
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden pt-16">
